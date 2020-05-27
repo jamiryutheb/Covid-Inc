@@ -20,13 +20,11 @@ public class Country implements Runnable {
             totalCase;
     public double relativePossibilityR;
     String cName;
-    Point point;
     ArrayList<Transportation> transportationList;
 
 
     public Country(String cName) {
 
-        point = new Point();
         this.totalCase = 0;
         this.cName = cName;
         this.hasCase = false;
@@ -39,7 +37,6 @@ public class Country implements Runnable {
         this.DEATH_RATE = 5;
         this.relativePossibilityR = 0.4;
         this.transportationList = new ArrayList<>();
-        relativePossibilityR = 5;
 
 
     }
